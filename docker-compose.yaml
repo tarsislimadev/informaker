@@ -8,10 +8,10 @@ services:
     volumes:
       - './src/app:/usr/share/nginx/html'
     ports:
-      - '8080:80'
+      - '8080:3000'
 
   docker-push:
-    image: 'tmvdl/projects:[project]'
+    image: 'tmvdl/projects:informaker'
     build: './src/app'
 
   github-release:
